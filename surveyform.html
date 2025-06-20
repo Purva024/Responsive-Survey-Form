@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="surveyform.css">
+    </head>
+    <body>
+        <h1 id="title">Internet Usage Survey Form</h1>
+        <p id="description">Thank you for participating in our survey! We are conducting this survey to better understand people's internet and social media usage habits.</p>
+        <form id="survey-form">
+            <div>
+            <fieldset>
+            <label for="name" id="name-label">
+                <br>Enter Your Name:
+                 <input type="text" id="name" name="text" placeholder="  Enter your full name" required>
+            </label>
+            </fieldset>
+            <fieldset>
+            <label for="email" id="email-label">
+                Enter Your Email ID:
+                 <input type="email" id="email" name="email" placeholder="  abc@gmail.com" required>
+            </label>
+            </fieldset>
+            <fieldset>
+            <label for="number" id="number-label">
+                Enter Your Age:
+                 <input type="number" id="number" name="num" placeholder="  Enter your age in numbers only" min="10" max="100" required>
+            </label>
+            </fieldset>
+            <fieldset>
+            <label>
+                Enter Your Gender: </label>
+                 <label for="gender-label1">
+                      <input type="radio" id="gender-label1" name="gender" value="Male"> Male<br> </label>
+                 <label for="gender-label2">
+                      <input type="radio" id="gender-label2" name="gender" value="Female"> Female<br> </label>
+                 <label for="gender-label3">
+                      <input type="radio" id="gender-label3" name="gender" value="Others"> Others<br> </label>
+            </fieldset>
+            <fieldset>
+            <label for="dropdown">
+                How many hours per day do you spend on the internet?<br>
+                 <select id="dropdown" name="mul">
+                    <option disabled selected>(Select)</option>
+                    <option>Less than 1 hour</option>
+                    <option>1-2 hours</option>
+                    <option>3-4 hours</option>
+                    <option>5-6 hours</option>
+                    <option>More than 6 hours</option>
+                 </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>
+                Which devices do you use to access the internet? (Select all that apply)<br> </label>
+                <label for="checkbox1">
+                 <input type="checkbox" id="checkbox1" name="device1" value="Smartphone"> Smartphone<br> </label>
+            <label for="checkbox2">
+                 <input type="checkbox" id="checkbox2" name="device2" value="Tablet"> Tablet<br> </label>
+            <label for="checkbox3">
+                 <input type="checkbox" id="checkbox3" name="device3" value="Laptop"> Laptop<br> </label>
+            <label for="checkbox4">
+                 <input type="checkbox" id="checkbox4" name="device4" value="Desktop computer"> Desktop computer<br> </label>
+            <label for="checkbox5">
+                 <input type="checkbox" id="checkbox5" name="device5" value="Smart TV"> Smart TV<br> </label>
+            <label for="checkbox6">
+                 <input type="checkbox" id="checkbox6" name="device6" value="Other"> Other<br>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>
+                Which of the following social media platforms do you use? (Select all that apply)<br> </label>
+                 <label for="checkboxes1">
+                      <input type="checkbox" id="checkboxes1" name="d1" value="Facebook"> Facebook<br> </label>
+            <label for="checkboxes2">
+                 <input type="checkbox" id="checkboxes2" name="d2" value="Twitter/X"> Twitter/X<br> </label>
+            <label for="checkboxes3">
+                 <input type="checkbox" id="checkboxes3" name="d3" value="Instagram"> Instagram<br> </label>
+            <label for="checkboxes4">
+                 <input type="checkbox" id="checkboxes4" name="d4" value="TikTok"> TikTok<br> </label>
+            <label for="checkboxes5">
+                 <input type="checkbox" id="checkboxes5" name="d5" value="LinkedIn"> LinkedIn<br> </label>
+            <label for="checkboxes6">
+                 <input type="checkbox" id="checkboxes6" name="d6" value="Snapchat"> Snapchat<br> </label>
+            <label for="checkboxes7">
+                 <input type="checkbox" id="checkboxes7" name="d7" value="Other"> Other<br>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>
+                What are your primary activities on the internet? (Select all that apply)<br> </label>
+                 <label for="check1">
+                 <input type="checkbox" id="check1" name="dev1" value="Browsing websites"> Browsing websites<br> </label>
+            <label for="check2">
+                 <input type="checkbox" id="check2" name="dev2" value="Online shopping"> Online shopping<br> </label>
+            <label for="check3">
+                 <input type="checkbox" id="check3" name="dev3" value="Streaming videos/music"> Streaming videos/music<br> </label>
+            <label for="check4">
+                 <input type="checkbox" id="check4" name="dev4" value="Social media"> Social media<br> </label>
+            <label for="check5">
+                 <input type="checkbox" id="check5" name="dev5" value="Work or study"> Work or study<br> </label>
+            <label for="check6">
+                 <input type="checkbox" id="check6" name="dev6" value="Gaming"> Gaming<br> </label>
+            <label for="check7">
+                 <input type="checkbox" id="check7" name="dev7" value="Other"> Other<br>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="comments"> What features would you like to see added or improved on your favorite social media platform?<br>
+             <textarea placeholder="  Add your comment" rows="3" cols="30" id="comments"></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <button id="submit">Submit</button>
+        </fieldset>
+    </div>
+        </form>
+    </body>
+</html>
